@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_getAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_showAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Type your age" /><![CDATA[
+
+    "
+        app:layout_constraintBottom_toTopOf="@+id/btn_findAge"
+        app:layout_constraintEnd_toEndOf="@+id/txt_getAge"
+        app:layout_constraintStart_toStartOf="@+id/txt_getAge"
+        app:layout_constraintTop_toBottomOf="@+id/txt_getAge" />
+
+    ]]>
+
+    <TextView
+        android:id="@+id/tv_showAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="37dp"
+        android:text="Display age here"
+        app:layout_constraintBottom_toTopOf="@+id/btn_findAge"
+        app:layout_constraintEnd_toEndOf="@+id/txt_getAge"
+        app:layout_constraintStart_toStartOf="@+id/txt_getAge"
+        app:layout_constraintTop_toBottomOf="@+id/txt_getAge" />
+
+    <Button
+        android:id="@+id/btn_findAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="489dp"
+        android:text="Find Age"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_showAge"
+        app:layout_constraintStart_toStartOf="@+id/tv_showAge"
+        app:layout_constraintTop_toBottomOf="@+id/tv_showAge" />
+</androidx.constraintlayout.widget.ConstraintLayout>
